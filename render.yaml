@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: railops-analyzer
+    runtime: docker
+    healthCheckPath: /api/v1/health
+    autoDeploy: true
+

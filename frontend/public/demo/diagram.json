@@ -1,0 +1,420 @@
+{
+  "dataset_id": "demo-central-01",
+  "stations": [
+    {
+      "id": "west",
+      "code": "WST",
+      "name": "西郊站",
+      "sequence": 0,
+      "mileage_km": 0.0
+    },
+    {
+      "id": "central",
+      "code": "CTR",
+      "name": "中心站",
+      "sequence": 1,
+      "mileage_km": 50.0
+    },
+    {
+      "id": "east",
+      "code": "EST",
+      "name": "东城站",
+      "sequence": 2,
+      "mileage_km": 100.0
+    }
+  ],
+  "trains": [
+    {
+      "train_id": "g101",
+      "train_no": "G101",
+      "direction": "UP",
+      "category": "HIGH_SPEED",
+      "points": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": null,
+          "dep_sec": 27600
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 28800,
+          "dep_sec": 28980
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": 30300,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "d205",
+      "train_no": "D205",
+      "direction": "UP",
+      "category": "EMU",
+      "points": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": null,
+          "dep_sec": 27780
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 28920,
+          "dep_sec": 29100
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": 30420,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "g107",
+      "train_no": "G107",
+      "direction": "UP",
+      "category": "HIGH_SPEED",
+      "points": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": null,
+          "dep_sec": 28080
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 29280,
+          "dep_sec": 29400
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": 30720,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "d211",
+      "train_no": "D211",
+      "direction": "UP",
+      "category": "EMU",
+      "points": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": null,
+          "dep_sec": 28380
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 29580,
+          "dep_sec": 29700
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": 31020,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "g115",
+      "train_no": "G115",
+      "direction": "UP",
+      "category": "HIGH_SPEED",
+      "points": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": null,
+          "dep_sec": 28680
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 29880,
+          "dep_sec": 30000
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": 31320,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "k721",
+      "train_no": "K721",
+      "direction": "DOWN",
+      "category": "PASSENGER",
+      "points": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": null,
+          "dep_sec": 27900
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 29160,
+          "dep_sec": 29400
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": 30720,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "t31",
+      "train_no": "T31",
+      "direction": "DOWN",
+      "category": "EXPRESS",
+      "points": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": null,
+          "dep_sec": 28200
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 29460,
+          "dep_sec": 29640
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": 30960,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "k725",
+      "train_no": "K725",
+      "direction": "DOWN",
+      "category": "PASSENGER",
+      "points": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": null,
+          "dep_sec": 28800
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 30060,
+          "dep_sec": 30300
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": 31620,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "z89",
+      "train_no": "Z89",
+      "direction": "DOWN",
+      "category": "EXPRESS",
+      "points": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": null,
+          "dep_sec": 29100
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 30360,
+          "dep_sec": 30540
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": 31860,
+          "dep_sec": null
+        }
+      ]
+    },
+    {
+      "train_id": "c301",
+      "train_no": "C301",
+      "direction": "DOWN",
+      "category": "INTERCITY",
+      "points": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "mileage_km": 100.0,
+          "arr_sec": null,
+          "dep_sec": 29400
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "mileage_km": 50.0,
+          "arr_sec": 30660,
+          "dep_sec": 30780
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "mileage_km": 0.0,
+          "arr_sec": 32100,
+          "dep_sec": null
+        }
+      ]
+    }
+  ],
+  "occupancies": [
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "k721",
+      "train_no": "K721",
+      "start_sec": 29040,
+      "end_sec": 29520,
+      "planned_arr_sec": 29160,
+      "planned_dep_sec": 29400
+    },
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "t31",
+      "train_no": "T31",
+      "start_sec": 29340,
+      "end_sec": 29760,
+      "planned_arr_sec": 29460,
+      "planned_dep_sec": 29640
+    },
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "k725",
+      "train_no": "K725",
+      "start_sec": 29940,
+      "end_sec": 30420,
+      "planned_arr_sec": 30060,
+      "planned_dep_sec": 30300
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "d211",
+      "train_no": "D211",
+      "start_sec": 29460,
+      "end_sec": 29820,
+      "planned_arr_sec": 29580,
+      "planned_dep_sec": 29700
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "z89",
+      "train_no": "Z89",
+      "start_sec": 30240,
+      "end_sec": 30660,
+      "planned_arr_sec": 30360,
+      "planned_dep_sec": 30540
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "c301",
+      "train_no": "C301",
+      "start_sec": 30540,
+      "end_sec": 30900,
+      "planned_arr_sec": 30660,
+      "planned_dep_sec": 30780
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g101",
+      "train_no": "G101",
+      "start_sec": 28680,
+      "end_sec": 29100,
+      "planned_arr_sec": 28800,
+      "planned_dep_sec": 28980
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "d205",
+      "train_no": "D205",
+      "start_sec": 28800,
+      "end_sec": 29220,
+      "planned_arr_sec": 28920,
+      "planned_dep_sec": 29100
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g107",
+      "train_no": "G107",
+      "start_sec": 29160,
+      "end_sec": 29520,
+      "planned_arr_sec": 29280,
+      "planned_dep_sec": 29400
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g115",
+      "train_no": "G115",
+      "start_sec": 29760,
+      "end_sec": 30120,
+      "planned_arr_sec": 29880,
+      "planned_dep_sec": 30000
+    }
+  ]
+}

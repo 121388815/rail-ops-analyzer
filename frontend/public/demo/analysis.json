@@ -1,0 +1,312 @@
+{
+  "run_id": "555638d9-ea20-408a-85fa-7893323f3d91",
+  "dataset_id": "demo-central-01",
+  "status": "COMPLETED",
+  "rules": {
+    "min_headway_sec": 300,
+    "track_approach_sec": 120,
+    "track_clearance_sec": 120,
+    "min_dwell_sec": 120
+  },
+  "metrics": {
+    "train_count": 10,
+    "conflict_count": 10,
+    "high_severity_count": 9,
+    "on_time_rate": 100.0,
+    "average_delay_sec": 0.0,
+    "affected_train_count": 0
+  },
+  "occupancies": [
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "k721",
+      "train_no": "K721",
+      "start_sec": 29040,
+      "end_sec": 29520,
+      "planned_arr_sec": 29160,
+      "planned_dep_sec": 29400
+    },
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "t31",
+      "train_no": "T31",
+      "start_sec": 29340,
+      "end_sec": 29760,
+      "planned_arr_sec": 29460,
+      "planned_dep_sec": 29640
+    },
+    {
+      "resource_id": "central-t1",
+      "resource_code": "1道",
+      "train_id": "k725",
+      "train_no": "K725",
+      "start_sec": 29940,
+      "end_sec": 30420,
+      "planned_arr_sec": 30060,
+      "planned_dep_sec": 30300
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "d211",
+      "train_no": "D211",
+      "start_sec": 29460,
+      "end_sec": 29820,
+      "planned_arr_sec": 29580,
+      "planned_dep_sec": 29700
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "z89",
+      "train_no": "Z89",
+      "start_sec": 30240,
+      "end_sec": 30660,
+      "planned_arr_sec": 30360,
+      "planned_dep_sec": 30540
+    },
+    {
+      "resource_id": "central-t2",
+      "resource_code": "2道",
+      "train_id": "c301",
+      "train_no": "C301",
+      "start_sec": 30540,
+      "end_sec": 30900,
+      "planned_arr_sec": 30660,
+      "planned_dep_sec": 30780
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g101",
+      "train_no": "G101",
+      "start_sec": 28680,
+      "end_sec": 29100,
+      "planned_arr_sec": 28800,
+      "planned_dep_sec": 28980
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "d205",
+      "train_no": "D205",
+      "start_sec": 28800,
+      "end_sec": 29220,
+      "planned_arr_sec": 28920,
+      "planned_dep_sec": 29100
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g107",
+      "train_no": "G107",
+      "start_sec": 29160,
+      "end_sec": 29520,
+      "planned_arr_sec": 29280,
+      "planned_dep_sec": 29400
+    },
+    {
+      "resource_id": "central-t3",
+      "resource_code": "3道",
+      "train_id": "g115",
+      "train_no": "G115",
+      "start_sec": 29760,
+      "end_sec": 30120,
+      "planned_arr_sec": 29880,
+      "planned_dep_sec": 30000
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "025aa622-0c51-47fd-9bbd-07a27d2fce0c",
+      "type": "TRACK_OVERLAP",
+      "resource_id": "central-t1",
+      "resource_name": "股道 1道",
+      "start_sec": 29340,
+      "end_sec": 29520,
+      "severity": "HIGH",
+      "train_ids": [
+        "k721",
+        "t31"
+      ],
+      "train_nos": [
+        "K721",
+        "T31"
+      ],
+      "gap_sec": 180,
+      "suggestion": "建议检查可用兼容股道；若无法换线，优先级较低的 T31 至少推迟约 3 分钟。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "3a0c66e8-a21c-420f-b54f-0a683e75bb0c",
+      "type": "TRACK_OVERLAP",
+      "resource_id": "central-t2",
+      "resource_name": "股道 2道",
+      "start_sec": 30540,
+      "end_sec": 30660,
+      "severity": "HIGH",
+      "train_ids": [
+        "z89",
+        "c301"
+      ],
+      "train_nos": [
+        "Z89",
+        "C301"
+      ],
+      "gap_sec": 120,
+      "suggestion": "建议检查可用兼容股道；若无法换线，优先级较低的 C301 至少推迟约 2 分钟。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "2c5a5c47-af6c-4d6e-81fa-648517051ff0",
+      "type": "TRACK_OVERLAP",
+      "resource_id": "central-t3",
+      "resource_name": "股道 3道",
+      "start_sec": 28800,
+      "end_sec": 29100,
+      "severity": "HIGH",
+      "train_ids": [
+        "g101",
+        "d205"
+      ],
+      "train_nos": [
+        "G101",
+        "D205"
+      ],
+      "gap_sec": 300,
+      "suggestion": "建议检查可用兼容股道；若无法换线，优先级较低的 D205 至少推迟约 5 分钟。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "8a7893f1-78f4-49ec-9ef3-842e3198b4a9",
+      "type": "TRACK_OVERLAP",
+      "resource_id": "central-t3",
+      "resource_name": "股道 3道",
+      "start_sec": 29160,
+      "end_sec": 29220,
+      "severity": "HIGH",
+      "train_ids": [
+        "d205",
+        "g107"
+      ],
+      "train_nos": [
+        "D205",
+        "G107"
+      ],
+      "gap_sec": 60,
+      "suggestion": "建议检查可用兼容股道；若无法换线，优先级较低的 G107 至少推迟约 1 分钟。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "1177bdeb-edf9-49ee-ab51-bed386847577",
+      "type": "HEADWAY_SHORT",
+      "resource_id": "west-central-up",
+      "resource_name": "区间 west → central",
+      "start_sec": 27600,
+      "end_sec": 27780,
+      "severity": "HIGH",
+      "train_ids": [
+        "g101",
+        "d205"
+      ],
+      "train_nos": [
+        "G101",
+        "D205"
+      ],
+      "gap_sec": 120,
+      "suggestion": "建议将后车 D205 进入区间的时刻推迟 2 分钟，以满足最小追踪间隔。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "4f35a13a-0171-4723-9e2a-156e7c679c8a",
+      "type": "HEADWAY_SHORT",
+      "resource_id": "central-east-up",
+      "resource_name": "区间 central → east",
+      "start_sec": 28980,
+      "end_sec": 29100,
+      "severity": "HIGH",
+      "train_ids": [
+        "g101",
+        "d205"
+      ],
+      "train_nos": [
+        "G101",
+        "D205"
+      ],
+      "gap_sec": 180,
+      "suggestion": "建议将后车 D205 进入区间的时刻推迟 3 分钟，以满足最小追踪间隔。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "2b9cdd09-ad0f-4105-b19f-ffd1d7e51f2b",
+      "type": "HEADWAY_SHORT",
+      "resource_id": "central-west-down",
+      "resource_name": "区间 central → west",
+      "start_sec": 29400,
+      "end_sec": 29640,
+      "severity": "HIGH",
+      "train_ids": [
+        "k721",
+        "t31"
+      ],
+      "train_nos": [
+        "K721",
+        "T31"
+      ],
+      "gap_sec": 60,
+      "suggestion": "建议将后车 T31 进入区间的时刻推迟 1 分钟，以满足最小追踪间隔。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "43531872-7b9b-4e44-a9c8-63e5fc0bfb07",
+      "type": "HEADWAY_SHORT",
+      "resource_id": "central-west-down",
+      "resource_name": "区间 central → west",
+      "start_sec": 30300,
+      "end_sec": 30540,
+      "severity": "HIGH",
+      "train_ids": [
+        "k725",
+        "z89"
+      ],
+      "train_nos": [
+        "K725",
+        "Z89"
+      ],
+      "gap_sec": 60,
+      "suggestion": "建议将后车 Z89 进入区间的时刻推迟 1 分钟，以满足最小追踪间隔。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "ad2d3d00-a278-4b9d-98f7-aa07d6db05c6",
+      "type": "HEADWAY_SHORT",
+      "resource_id": "central-west-down",
+      "resource_name": "区间 central → west",
+      "start_sec": 30540,
+      "end_sec": 30780,
+      "severity": "HIGH",
+      "train_ids": [
+        "z89",
+        "c301"
+      ],
+      "train_nos": [
+        "Z89",
+        "C301"
+      ],
+      "gap_sec": 60,
+      "suggestion": "建议将后车 C301 进入区间的时刻推迟 1 分钟，以满足最小追踪间隔。算法建议，仅用于模拟分析。"
+    },
+    {
+      "id": "c758eac6-b1e1-435a-b0aa-df6e10c5eee8",
+      "type": "RUN_TOO_SHORT",
+      "resource_id": "west-central-up",
+      "resource_name": "区间 west → central",
+      "start_sec": 27780,
+      "end_sec": 28920,
+      "severity": "MEDIUM",
+      "train_ids": [
+        "d205"
+      ],
+      "train_nos": [
+        "D205"
+      ],
+      "gap_sec": 60,
+      "suggestion": "建议校正区间运行时分。算法建议，仅用于模拟分析。"
+    }
+  ],
+  "disclaimer": "数据为人工构造，仅用于算法验证和求职展示，不代表任何真实车站运行计划；分析结果不构成调度指令。"
+}

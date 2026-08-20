@@ -1,0 +1,78 @@
+{
+  "id": "demo-central-01",
+  "name": "Demo Central Station",
+  "service_date": "2026-08-20",
+  "source_type": "SAMPLE",
+  "status": "READY",
+  "created_at": "2026-08-20T08:00:00+08:00",
+  "disclaimer": "数据为人工构造，仅用于算法验证和求职展示，不代表任何真实车站运行计划；分析结果不构成调度指令。",
+  "stations": [
+    {"id": "west", "code": "WST", "name": "西郊站", "sequence": 0, "mileage_km": 0},
+    {"id": "central", "code": "CTR", "name": "中心站", "sequence": 1, "mileage_km": 50},
+    {"id": "east", "code": "EST", "name": "东城站", "sequence": 2, "mileage_km": 100}
+  ],
+  "tracks": [
+    {"id": "central-t1", "station_id": "central", "code": "1道", "type": "ARRIVAL_DEPARTURE", "direction": "DOWN", "capacity": 1},
+    {"id": "central-t2", "station_id": "central", "code": "2道", "type": "ARRIVAL_DEPARTURE", "direction": "BOTH", "capacity": 1},
+    {"id": "central-t3", "station_id": "central", "code": "3道", "type": "ARRIVAL_DEPARTURE", "direction": "UP", "capacity": 1},
+    {"id": "central-t4", "station_id": "central", "code": "4道", "type": "ARRIVAL_DEPARTURE", "direction": "BOTH", "capacity": 1}
+  ],
+  "sections": [
+    {"id": "west-central-up", "from_station_id": "west", "to_station_id": "central", "direction": "UP", "min_run_sec": 1200, "min_headway_sec": 300},
+    {"id": "central-east-up", "from_station_id": "central", "to_station_id": "east", "direction": "UP", "min_run_sec": 1320, "min_headway_sec": 300},
+    {"id": "east-central-down", "from_station_id": "east", "to_station_id": "central", "direction": "DOWN", "min_run_sec": 1260, "min_headway_sec": 300},
+    {"id": "central-west-down", "from_station_id": "central", "to_station_id": "west", "direction": "DOWN", "min_run_sec": 1320, "min_headway_sec": 300}
+  ],
+  "trains": [
+    {"id": "g101", "train_no": "G101", "category": "HIGH_SPEED", "direction": "UP", "priority": 100, "stops": [
+      {"station_id": "west", "arr_sec": null, "dep_sec": 27600, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 28800, "dep_sec": 28980, "track_id": "central-t3", "stop_type": "STOP"},
+      {"station_id": "east", "arr_sec": 30300, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "d205", "train_no": "D205", "category": "EMU", "direction": "UP", "priority": 80, "stops": [
+      {"station_id": "west", "arr_sec": null, "dep_sec": 27780, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 28920, "dep_sec": 29100, "track_id": "central-t3", "stop_type": "STOP"},
+      {"station_id": "east", "arr_sec": 30420, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "g107", "train_no": "G107", "category": "HIGH_SPEED", "direction": "UP", "priority": 100, "stops": [
+      {"station_id": "west", "arr_sec": null, "dep_sec": 28080, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 29280, "dep_sec": 29400, "track_id": "central-t3", "stop_type": "STOP"},
+      {"station_id": "east", "arr_sec": 30720, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "d211", "train_no": "D211", "category": "EMU", "direction": "UP", "priority": 80, "stops": [
+      {"station_id": "west", "arr_sec": null, "dep_sec": 28380, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 29580, "dep_sec": 29700, "track_id": "central-t2", "stop_type": "STOP"},
+      {"station_id": "east", "arr_sec": 31020, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "g115", "train_no": "G115", "category": "HIGH_SPEED", "direction": "UP", "priority": 100, "stops": [
+      {"station_id": "west", "arr_sec": null, "dep_sec": 28680, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 29880, "dep_sec": 30000, "track_id": "central-t3", "stop_type": "STOP"},
+      {"station_id": "east", "arr_sec": 31320, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "k721", "train_no": "K721", "category": "PASSENGER", "direction": "DOWN", "priority": 60, "stops": [
+      {"station_id": "east", "arr_sec": null, "dep_sec": 27900, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 29160, "dep_sec": 29400, "track_id": "central-t1", "stop_type": "STOP"},
+      {"station_id": "west", "arr_sec": 30720, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "t31", "train_no": "T31", "category": "EXPRESS", "direction": "DOWN", "priority": 70, "stops": [
+      {"station_id": "east", "arr_sec": null, "dep_sec": 28200, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 29460, "dep_sec": 29640, "track_id": "central-t1", "stop_type": "STOP"},
+      {"station_id": "west", "arr_sec": 30960, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "k725", "train_no": "K725", "category": "PASSENGER", "direction": "DOWN", "priority": 60, "stops": [
+      {"station_id": "east", "arr_sec": null, "dep_sec": 28800, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 30060, "dep_sec": 30300, "track_id": "central-t1", "stop_type": "STOP"},
+      {"station_id": "west", "arr_sec": 31620, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "z89", "train_no": "Z89", "category": "EXPRESS", "direction": "DOWN", "priority": 75, "stops": [
+      {"station_id": "east", "arr_sec": null, "dep_sec": 29100, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 30360, "dep_sec": 30540, "track_id": "central-t2", "stop_type": "STOP"},
+      {"station_id": "west", "arr_sec": 31860, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]},
+    {"id": "c301", "train_no": "C301", "category": "INTERCITY", "direction": "DOWN", "priority": 85, "stops": [
+      {"station_id": "east", "arr_sec": null, "dep_sec": 29400, "track_id": null, "stop_type": "ORIGIN"},
+      {"station_id": "central", "arr_sec": 30660, "dep_sec": 30780, "track_id": "central-t2", "stop_type": "STOP"},
+      {"station_id": "west", "arr_sec": 32100, "dep_sec": null, "track_id": null, "stop_type": "DESTINATION"}
+    ]}
+  ]
+}

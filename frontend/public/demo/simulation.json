@@ -1,0 +1,368 @@
+{
+  "run_id": "196f00cc-98c4-42ae-a199-b51c47d9c78e",
+  "dataset_id": "demo-central-01",
+  "injected_train_id": "g101",
+  "injected_delay_sec": 480,
+  "status": "COMPLETED",
+  "metrics": {
+    "train_count": 10,
+    "conflict_count": 0,
+    "high_severity_count": 0,
+    "on_time_rate": 20.0,
+    "average_delay_sec": 708.0,
+    "affected_train_count": 8
+  },
+  "trains": [
+    {
+      "train_id": "g101",
+      "train_no": "G101",
+      "direction": "UP",
+      "max_delay_sec": 480,
+      "stops": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 27600,
+          "actual_dep_sec": 28080,
+          "delay_sec": 480
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 28800,
+          "actual_arr_sec": 29280,
+          "planned_dep_sec": 28980,
+          "actual_dep_sec": 29460,
+          "delay_sec": 480
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": 30300,
+          "actual_arr_sec": 30780,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 480
+        }
+      ]
+    },
+    {
+      "train_id": "d205",
+      "train_no": "D205",
+      "direction": "UP",
+      "max_delay_sec": 1260,
+      "stops": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 27780,
+          "actual_dep_sec": 28380,
+          "delay_sec": 600
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 28920,
+          "actual_arr_sec": 30180,
+          "planned_dep_sec": 29100,
+          "actual_dep_sec": 30360,
+          "delay_sec": 1260
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": 30420,
+          "actual_arr_sec": 31680,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 1260
+        }
+      ]
+    },
+    {
+      "train_id": "g107",
+      "train_no": "G107",
+      "direction": "UP",
+      "max_delay_sec": 1260,
+      "stops": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 28080,
+          "actual_dep_sec": 28680,
+          "delay_sec": 600
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 29280,
+          "actual_arr_sec": 30540,
+          "planned_dep_sec": 29400,
+          "actual_dep_sec": 30660,
+          "delay_sec": 1260
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": 30720,
+          "actual_arr_sec": 31980,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 1260
+        }
+      ]
+    },
+    {
+      "train_id": "d211",
+      "train_no": "D211",
+      "direction": "UP",
+      "max_delay_sec": 1260,
+      "stops": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 28380,
+          "actual_dep_sec": 28980,
+          "delay_sec": 600
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 29580,
+          "actual_arr_sec": 30840,
+          "planned_dep_sec": 29700,
+          "actual_dep_sec": 30960,
+          "delay_sec": 1260
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": 31020,
+          "actual_arr_sec": 32280,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 1260
+        }
+      ]
+    },
+    {
+      "train_id": "g115",
+      "train_no": "G115",
+      "direction": "UP",
+      "max_delay_sec": 1260,
+      "stops": [
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 28680,
+          "actual_dep_sec": 29280,
+          "delay_sec": 600
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 29880,
+          "actual_arr_sec": 31140,
+          "planned_dep_sec": 30000,
+          "actual_dep_sec": 31260,
+          "delay_sec": 1260
+        },
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": 31320,
+          "actual_arr_sec": 32580,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 1260
+        }
+      ]
+    },
+    {
+      "train_id": "k721",
+      "train_no": "K721",
+      "direction": "DOWN",
+      "max_delay_sec": 0,
+      "stops": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 27900,
+          "actual_dep_sec": 27900,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 29160,
+          "actual_arr_sec": 29160,
+          "planned_dep_sec": 29400,
+          "actual_dep_sec": 29400,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": 30720,
+          "actual_arr_sec": 30720,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 0
+        }
+      ]
+    },
+    {
+      "train_id": "t31",
+      "train_no": "T31",
+      "direction": "DOWN",
+      "max_delay_sec": 60,
+      "stops": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 28200,
+          "actual_dep_sec": 28200,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 29460,
+          "actual_arr_sec": 29520,
+          "planned_dep_sec": 29640,
+          "actual_dep_sec": 29700,
+          "delay_sec": 60
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": 30960,
+          "actual_arr_sec": 31020,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 60
+        }
+      ]
+    },
+    {
+      "train_id": "k725",
+      "train_no": "K725",
+      "direction": "DOWN",
+      "max_delay_sec": 0,
+      "stops": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 28800,
+          "actual_dep_sec": 28800,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 30060,
+          "actual_arr_sec": 30060,
+          "planned_dep_sec": 30300,
+          "actual_dep_sec": 30300,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": 31620,
+          "actual_arr_sec": 31620,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 0
+        }
+      ]
+    },
+    {
+      "train_id": "z89",
+      "train_no": "Z89",
+      "direction": "DOWN",
+      "max_delay_sec": 720,
+      "stops": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 29100,
+          "actual_dep_sec": 29100,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 30360,
+          "actual_arr_sec": 31080,
+          "planned_dep_sec": 30540,
+          "actual_dep_sec": 31260,
+          "delay_sec": 720
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": 31860,
+          "actual_arr_sec": 32580,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 720
+        }
+      ]
+    },
+    {
+      "train_id": "c301",
+      "train_no": "C301",
+      "direction": "DOWN",
+      "max_delay_sec": 780,
+      "stops": [
+        {
+          "station_id": "east",
+          "station_name": "东城站",
+          "planned_arr_sec": null,
+          "actual_arr_sec": null,
+          "planned_dep_sec": 29400,
+          "actual_dep_sec": 29400,
+          "delay_sec": 0
+        },
+        {
+          "station_id": "central",
+          "station_name": "中心站",
+          "planned_arr_sec": 30660,
+          "actual_arr_sec": 31440,
+          "planned_dep_sec": 30780,
+          "actual_dep_sec": 31560,
+          "delay_sec": 780
+        },
+        {
+          "station_id": "west",
+          "station_name": "西郊站",
+          "planned_arr_sec": 32100,
+          "actual_arr_sec": 32880,
+          "planned_dep_sec": null,
+          "actual_dep_sec": null,
+          "delay_sec": 780
+        }
+      ]
+    }
+  ],
+  "disclaimer": "数据为人工构造，仅用于算法验证和求职展示，不代表任何真实车站运行计划；分析结果不构成调度指令。"
+}

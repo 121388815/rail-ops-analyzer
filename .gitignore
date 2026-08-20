@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Node / Vite
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Local configuration and data
+.env
+*.db
+*.sqlite3
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Codex/PDF inspection artifacts
+.codex-tmp/
+tmp/
+
